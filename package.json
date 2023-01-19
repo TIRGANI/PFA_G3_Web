@@ -1,0 +1,44 @@
+{
+  "name": "trelloclone",
+  "version": "1.0.0",
+  "description": "A Trello clone built using the MERN stack.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "build": "nm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isshroud/thepfalast.git"
+  },
+  "author": "Archawin Wongkittiruk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isshroud/thepfalast.git"
+  },
+  "homepage": "https://github.com/isshroud/thepfalast.git",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.5",
+    "bcryptjs": "^2.4.3",
+    "build": "^0.1.4",
+    "dotenv": "^8.2.0",
+    "exports": "^0.0.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "gravatar": "^1.8.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^5.11.16",
+    "react-scripts": "^2.1.3",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7"
+  }
+}
